@@ -1,0 +1,755 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(240, 176, 86);
+        margin:0;
+        padding:0;
+    }
+
+    /* Header Styles */
+header {
+    background-color: #171719fd;
+    color: yellow; /* Text color for the header */
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+    header .logo {
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    top: 0;
+    left: 50%;
+    padding: 20px 0 20px 0;
+    text-align: left;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the alpha value (0.5) to adjust transparency */
+
+}
+
+header img {
+    width: 100%;
+    padding: 0; /* Adjust the padding as needed */
+    margin: 0; /* Adjust the margin as needed */
+    position: relative;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 9999;
+    display: block;
+}
+
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+
+/* Navigation Styles */
+nav {
+    background-color: #093346;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: #171719fd;
+    color: #fff;
+}
+
+
+
+.mainframe {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px !important; /* Adjust the value as needed */
+}
+
+
+    .left-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 77%;
+        margin: 10px 0 10px 10px;
+    }
+
+    
+
+    .right-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 20%;
+        background-color: white;
+        padding: 10px;
+    }
+
+
+    .right-side .topic{
+        border: 2px solid gray;
+        padding: 10px;
+        background-color: rgb(198, 145, 32);
+
+        width: 80%;
+        border-radius: 10px 0 10px 0;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .right-side .topic:hover{
+        background-color: rgb(175, 95, 8);
+    }
+
+    .right-side .topic a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(255, 255, 255); /* Change text color to black */
+}
+
+
+
+
+
+/*--Dictionary Topics -----*/
+
+
+.right-side .dictionary{
+        border: 2px solid gray;
+        padding: 10px;
+        background-color: rgb(128, 167, 12);
+
+        width: 80%;
+        border-radius: 10px 0 10px 0;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .right-side .dictionary:hover{
+        background-color: rgb(54, 71, 3);
+    }
+
+    .right-side .dictionary a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(255, 255, 255); /* Change text color to black */
+}
+
+
+/*---End of Dictionary -----*/
+
+    .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 20px 30px 20px;
+    border: 3px solid rgb(255, 255, 255); /* Added 'solid' style and 'black' color */
+    /*background-color: rgb(179, 233, 220);*/
+    background-color: rgb(179, 233, 220);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0); /* Change the values to adjust the shadow */
+    /*border-radius: 20px 0 20px 0;*/
+    border-radius: 0;
+    width: 80%;
+}
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /*border: 2px solid rgb(119, 199, 231);*/
+        padding: 20px;
+
+    }
+
+    .image-container .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 360px;
+        height: 230px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*height: 300px;*/
+        flex-direction: column;
+        /*border-left: 2px solid rgb(255, 255, 255);*/
+        padding: 10px;
+        width: 70%;
+        /*border-radius: 10px 0 10px 0;*/
+       /* margin: 20px 0 20px 0;*/
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 120px;
+        height: 50px;
+        border: 1px solid black;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1.3rem;
+    }
+
+    .question .box {
+    width: 500px;
+    border: none; /* Remove all borders */
+    border-bottom: 2px solid black !important; /* Add a bottom border */
+    margin-bottom: 30px;
+    font-family: "Comic Sans MS", cursive; /* Use a playful and whimsical font */
+    font-size: 1.6rem; /* Adjust the font size as needed */
+    color: rgb(165, 96, 7);
+    font-weight: bold;
+}
+
+
+
+
+    .droppable {
+        border: 2px dashed black;
+        padding: 5px 0 5px 0;
+    }
+
+    [id^="drag-box"]:hover {
+        background-color: darkgray;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .green {
+        background-color: lightgreen;
+    }
+
+
+
+
+    /*---- Sidebar Css Properties -------*/
+
+     
+
+/* Sidebar Styles */
+
+
+.sidebar {
+    width: 250px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+.sidebar span {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar span:hover {
+    color: yellow;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: yellow;
+    background-color: darkgray;
+}
+
+
+
+/*------- End of Sidebar Functionality ------------8/
+
+
+
+    
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(21, 17, 17);
+    padding: 20px 220px; /* Adjusted padding */
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap to the next line if necessary */
+    justify-content: center; /* Add space between columns */
+    align-items: center; /* Add space between columns */
+}
+
+/* Footer Column Styles */
+.footer-column {
+    flex: 1; /* Equal distribution of space among columns */
+    text-align: left; /* Adjust text alignment within columns */
+    margin-bottom: 20px; /* Add bottom margin to create space between columns */
+}
+
+.footer-column h3 {
+    color: whitesmoke;
+}
+
+.footer-column p,
+.footer-column ul {
+    color: whitesmoke;
+    margin-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+/* Add hover effect for Quick Links */
+.footer-column a:hover {
+    color: #ff4500; /* Change the color on hover */
+}
+
+/* Social Media Links Styles */
+.social-media-links li {
+    margin-bottom: 0; /* Remove bottom margin for social media links */
+}
+
+.social-media-links a {
+    color: #3b5998; /* Facebook color */
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+/* Add hover effect for Facebook */
+.social-media-links a:hover {
+    color: #1877f2; /* Change the color on hover */
+}
+
+/* Copyright Section Styles */
+.copyright {
+    flex: 100%; /* Take up 100% width */
+    text-align: center;
+    color: #fff; /* Text color for copyright */
+    background-color: #333; /* Dark grey background color */
+    padding: 15px; /* Padding for text within the copyright section */
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+
+
+
+
+.sentence_sound {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+.sentence_sound:hover {
+    transform: scale(1.5); /* You can adjust the scale factor as needed */
+}
+
+
+.sentence_sound img{
+    width: 10px;
+    height: 10px;
+    margin: 5px 0 5px 10px;
+
+}
+
+/*--CSS for the Dialogue Conversation 1: What is the weather like?--- */
+.dialogue-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  font-family: Arial, sans-serif;
+  /*max-width: 600px;*/
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid gray;
+  width: 90%;
+}
+
+.talk{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+
+.speaker-A {
+  font-weight: lighter;
+  font-size: 1.4rem;
+  color: blue;
+  width: 100px;
+
+}
+
+.speaker-B {
+  font-weight: lighter;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: darkred;
+  width: 100px;
+
+
+}
+
+.utterance {
+  /*margin-bottom: 15px;*/
+  font-size: 1.4rem;
+}
+
+
+
+.translation{
+    padding-left: 10px;
+    font-size: 1rem;
+    color: green;
+}
+
+
+.dialogue-title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+
+.dialogue-title span{
+    font-size: 1.7rem;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.dialogue-title .translation{
+    font-size: 1.2rem;
+    font-family: "Comic Sans MS", cursive;
+    color: rgb(24, 77, 2);font-weight: lighter;
+}
+
+.dialogue-title .English-title{
+    font-size: 1.7rem;
+    font-family: "Comic Sans MS", cursive;
+    color: rgb(154, 119, 6);
+    font-weight: bold;
+}
+
+
+.playing {
+            color: blue;
+            font-weight: bold;
+        }
+
+
+.listen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.listen button {
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition for background-color and color changes */
+}
+
+.listen button:hover {
+    background-color: rgb(144, 80, 12);
+    color: white;
+}
+
+
+
+/*---- End of the CSS ------*/
+
+
+
+    @media screen and (max-width: 768px) {
+        .content {
+            flex-direction: column;
+            margin-top: 30px;
+            /*height: 650px;*/
+        }
+
+        .container {
+            height: 350px;
+            align-items: center;
+            width: 400px;
+            border: none !important;
+        }
+
+        .logo{
+            font-size: 1.4rem !important;
+        }
+
+        
+
+    .sidebar {
+        padding-top: 1.5rem;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.875rem;
+        margin-top: 1rem;
+    }
+
+    .image-container .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 180px;
+    }
+
+
+    .box {
+        width: 110px;
+        height: 40px;
+        border: 1px solid black;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+
+    .question .box {
+    width: 300px;
+    border: none; /* Remove all borders */
+    border-bottom: 1px solid black !important; /* Add a bottom border */
+    margin-bottom: 30px;
+    font-family: "Comic Sans MS", cursive; /* Use a playful and whimsical font */
+    font-size: 1.1rem; /* Adjust the font size as needed */
+    color: rgb(165, 96, 7);
+    font-weight: bold;
+}
+
+
+.droppable {
+        border: 1px dashed black;
+        padding: 5px 0 5px 0;
+        width: 100px;
+        background-color: white;
+        color: rgb(86, 71, 2);
+        font-weight: bold;
+        height: 40px;
+    }
+
+.sentence_sound{
+    cursor: pointer;
+}
+
+.sentence_sound {
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    margin: 5px 0 0 0 !important;
+
+}
+
+.sentence_sound:hover {
+    transform: scale(1.1); /* You can adjust the scale factor as needed */
+}
+
+
+.sentence_sound img{
+    width: 10px !important;
+    height: 10px !important;
+
+}
+
+
+.mainframe{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-side{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 100vh;
+    }
+
+    .left-side{
+        margin: 10px 0 10px 0;
+        width: 90%;
+    }
+
+
+    .dialogue-title span{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.speaker-A {
+  font-weight: lighter;
+  font-size: 1rem;
+  color: blue;
+  width: 100%;
+
+}
+
+.speaker-B {
+  font-weight: lighter;
+  margin-bottom: 0 !important;
+  font-size: 1rem;
+  color: darkred;
+  width: 100%;
+
+
+}
+
+.utterance {
+  /*margin-bottom: 15px;*/
+  margin: 10px 0 0 0;
+  font-size: 1rem;
+}
+
+.translation{
+    padding-left: 0 !important;
+    font-size: 0.9rem;
+    color: green;
+    margin: 5px 0 5px 0;
+}
+
+
+.talk{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+.dialogue-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
+    /*max-width: 600px;*/
+    /* margin: 20px auto; */
+    padding: 10px;
+    border: 2px solid gray;
+    width: 90%;
+}
+
+.listen button {
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition for background-color and color changes */
+}
+
+
+    }
+
+    /* Add additional CSS if needed */
+

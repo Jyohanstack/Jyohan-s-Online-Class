@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Activities</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="./coffee-2425303_1280.jpg" alt="Classrooom">
+        
+        <span class="logo">Jyohan's English - <span style="color:white">Felix in HongKong</span></span>
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#" target="_blank"> Weekly Activities</a>
+    </nav>
+
+    <div class="sidebar">
+        <a href="index.html" class="dropdown-toggle">Lesson 1</a>
+        <a href="#" class="dropdown-toggle">Lesson 2</a>
+        <a href="#" class="dropdown-toggle">Lesson 3</a>
+        <hr>       
+        
+    </div>
+
+
+<div class="mainframe">
+
+    <div class="left-side">
+
+                            
+                    
+
+
+                    <!--Dialogue Conversation 1: What is the weather like?-->
+
+                    <div class="content">
+                        
+
+                        <div class="dialogue-container">
+                            <div class="dialogue-title">
+                                <span class="English-title">What is the weather like?</span>
+                                <span class="translation">天氣點樣？</span>
+                            </div>
+
+                            <div class="listen">
+                                <button onclick="playAll()">Play All</button>
+                                <button onclick="pauseAll()">Pause</button>
+                            </div>
+
+                            <div class="talk">
+                                <div class="speaker-A">Mary:</div>
+                                <div class="utterance" id="textToHighlight1">Hi Timmy, how are you today?</div>
+                                <div class="translation">嗨，蒂米，你今日點啊？</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound1', 'textToHighlight1')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound1">
+                                    <source src="./What_is_the_weather_like/1.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            
+                            
+                            
+                            
+                            <div class="talk">
+                                <div class="speaker-B">Timmy:</div>
+                                <div class="with-translation">
+                                    <div class="utterance" id="textToHighlight2">Hi Mary! I'm good, thank you. How about you?</div>
+                                    <div class="translation">嗨，瑪麗！我好，多謝。你呢？</div>
+                                </div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound2', 'textToHighlight2')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound2">
+                                    <source src="./What_is_the_weather_like/2.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            
+
+                            
+                            <div class="talk">
+                                <div class="speaker-A">Mary:</div>
+                                <div class="with-translation">
+                                    <div class="utterance" id="textToHighlight3">I'm good too, thanks. What did you do over the weekend?</div>
+                                    <div class="translation">我都好，多謝。你個週末做咗乜嘢呀？</div>
+                                </div>
+                                
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound3', 'textToHighlight3')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound3">
+                                    <source src="./What_is_the_weather_like/3.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            
+
+                            <!-- 4th turn -->
+                                                        
+                            <div class="talk">
+                                <div class="speaker-B">Timmy:</div>
+                                <div class="utterance" id="textToHighlight4">I went to the park with my family. It was so much fun!</div>
+                                <div class="translation">我同家人去公園。真係好開心啊！</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound4', 'textToHighlight4')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound4">
+                                    <source src="./What_is_the_weather_like/4.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 5th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Mary:</div>
+                                <div class="utterance" id="textToHighlight5">Wow, that sounds great! What did you do there?</div>
+                                <div class="translation">哇，聽起嚟好正啊！喺度你做咗乜嘢呀？</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound5', 'textToHighlight5')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound5">
+                                    <source src="./What_is_the_weather_like/5.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 6th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Timmy:</div>
+                                <div class="utterance" id="textToHighlight6">We played soccer and had a picnic. What about you? What did you do?</div>
+                                <div class="translation">我哋踢波同野餐。你呢？你做咗乜嘢？</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound6', 'textToHighlight6')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound6">
+                                    <source src="./What_is_the_weather_like/6.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 7th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Mary:</div>
+                                <div class="utterance" id="textToHighlight7">I went to the beach with my parents. It was awesome!</div>
+                                <div class="translation">我同父母去海灘。太好啦！</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound7', 'textToHighlight7')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound7">
+                                    <source src="./What_is_the_weather_like/7.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 8th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Timmy:</div>
+                                <div class="utterance" id="textToHighlight8">Really? What did you do at the beach?</div>
+                                <div class="translation">真係咩？你喺海灘上做咗乜嘢？</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound8', 'textToHighlight8')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound8">
+                                    <source src="./What_is_the_weather_like/8.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 9th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Mary:</div>
+                                <div class="utterance" id="textToHighlight9">We built sandcastles and swam in the ocean. It was so refreshing!</div>
+                                <div class="translation">我哋築沙堡，喺海里游水。真係令人耳目一新！</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound9', 'textToHighlight9')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound9">
+                                    <source src="./What_is_the_weather_like/9.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 10th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Timmy:</div>
+                                <div class="utterance" id="textToHighlight10">That sounds like a lot of fun! What was the weather like at the beach?</div>
+                                <div class="translation">聽起嚟好有趣！海灘嘅天氣點樣？</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound10', 'textToHighlight10')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound10">
+                                    <source src="./What_is_the_weather_like/10.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 11th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Mary:</div>
+                                <div class="utterance" id="textToHighlight11">It was hot and sunny! Perfect beach weather.</div>
+                                <div class="translation">天氣炎熱，陽光明媚！完美嘅海灘天氣。</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound11', 'textToHighlight11')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound11">
+                                    <source src="./What_is_the_weather_like/11.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 12th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Timmy:</div>
+                                <div class="utterance" id="textToHighlight12">Yeah, it's been really hot lately, hasn't it?</div>
+                                <div class="translation">係啊，呢排真係好熱，唔系吗？</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound12', 'textToHighlight12')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound12">
+                                    <source src="./What_is_the_weather_like/12.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 13th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Mary:</div>
+                                <div class="utterance" id="textToHighlight13">Yeah, but I like it. I love summer!</div>
+                                <div class="translation">係呀，但我中意。我愛夏天！</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound13', 'textToHighlight13')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound13">
+                                    <source src="./What_is_the_weather_like/13.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 14th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Timmy:</div>
+                                <div class="utterance" id="textToHighlight14">Me too! Hey, do you want to play soccer with me after school today?</div>
+                                <div class="translation">我都係！嘿，你今日放學後想唔想同我一齊踢波呀？</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound14', 'textToHighlight14')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound14">
+                                    <source src="./What_is_the_weather_like/14.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 15th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Mary:</div>
+                                <div class="utterance" id="textToHighlight15">Sure! That sounds like fun. Let's meet at the playground at 4 o'clock.</div>
+                                <div class="translation">得啊！聽起嚟好有趣。喺4點喺操場見啦。</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound15', 'textToHighlight15')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound15">
+                                    <source src="./What_is_the_weather_like/15.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <!-- 16th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Timmy:</div>
+                                <div class="utterance" id="textToHighlight16">Okay, see you then!</div>
+                                <div class="translation">好嘅，到時見！</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound16', 'textToHighlight16')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound16">
+                                    <source src="./What_is_the_weather_like/16.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            
+                        </div>
+                        
+                    </div>
+
+
+
+                    <!-- End of the dialogue for what is the weather like?-->
+
+
+                    <!--- Dialogue Conversation for What color is your bag?-->
+                    <div class="content">
+                        
+
+                        <div class="dialogue-container">
+                            <div class="dialogue-title">
+                                <span>What color is your bag?</span>
+                            </div>
+                    
+                            <div class="listen">
+                                <button onclick="playAll()">Play All</button>
+                                <button onclick="pauseAll()">Pause</button>
+                            </div>
+                    
+                            <div class="talk">
+                                <div class="speaker-A">Sally:</div>
+                                <div class="utterance" id="textToHighlight1">Hi Tommy! How was your weekend?</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound1', 'textToHighlight1')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound1">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                    
+                    
+                            <div class="talk">
+                                <div class="speaker-B">Tommy:</div>
+                                <div class="utterance" id="textToHighlight2">Hi Sally! It was great. I went to the park with my family. What about you?</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound2', 'textToHighlight2')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound2">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                    
+                    
+                            <div class="talk">
+                                <div class="speaker-A">Sally:</div>
+                                <div class="utterance" id="textToHighlight3">I had fun too! I went to the zoo with my mom and dad.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound3', 'textToHighlight3')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound3">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 4th turn -->
+                    
+                            <div class="talk">
+                                <div class="speaker-B">Tommy:</div>
+                                <div class="utterance" id="textToHighlight4">Wow, that sounds exciting! Did you see any monkeys?</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound4', 'textToHighlight4')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound4">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 5th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Sally:</div>
+                                <div class="utterance" id="textToHighlight5">Yes, lots of them! They were swinging from tree to tree.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound5', 'textToHighlight5')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound5">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 6th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Tommy:</div>
+                                <div class="utterance" id="textToHighlight6">Cool! Hey, what color is your bag?</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound6', 'textToHighlight6')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound6">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 7th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Sally:</div>
+                                <div class="utterance" id="textToHighlight7">My school bag is red. What about yours?</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound7', 'textToHighlight7')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound7">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 8th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Tommy:</div>
+                                <div class="utterance" id="textToHighlight8">Mine is blue. We have different colors!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound8', 'textToHighlight8')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound8">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 9th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Sally:</div>
+                                <div class="utterance" id="textToHighlight9">Yeah, that's right! It's fun to have different colors. We can easily find our bags at school.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound9', 'textToHighlight9')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound9">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 10th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Tommy:</div>
+                                <div class="utterance" id="textToHighlight10">Definitely! Well, I better go now. See you tomorrow, Sally!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound10', 'textToHighlight10')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound10">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 11th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Sally:</div>
+                                <div class="utterance" id="textToHighlight11">Bye, Tommy! See you tomorrow!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound11', 'textToHighlight11')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound11">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- End of the dialogue what color is your bag?-->
+
+
+
+
+                    <!--Dialogue for What time is it?-->
+                    <div class="content">
+                        
+
+                        <div class="dialogue-container">
+                            <div class="dialogue-title">
+                                <span>What time is it?</span>
+                            </div>
+                    
+                            <div class="listen">
+                                <button onclick="playAll()">Play All</button>
+                                <button onclick="pauseAll()">Pause</button>
+                            </div>
+                    
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight1">Hey Sarah, do you want to play some games?</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound1', 'textToHighlight1')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound1">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                    
+                    
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight2">Sure, Jack! But first, what time is it?</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound2', 'textToHighlight2')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound2">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                    
+                    
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight3">It's ten thirty.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound3', 'textToHighlight3')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound3">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 4th turn -->
+                    
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight4">Oh, we still have plenty of time to play!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound4', 'textToHighlight4')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound4">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 5th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight5">Yeah, let's play hide and seek. I'll count first, and you hide.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound5', 'textToHighlight5')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound5">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 6th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight6">Okay, I'll find a good hiding spot.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound6', 'textToHighlight6')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound6">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 7th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight7">Ready or not, here I come!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound7', 'textToHighlight7')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound7">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 8th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight8">(giggles) You'll never find me!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound8', 'textToHighlight8')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound8">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 9th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight9">Found you! You were behind the couch.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound9', 'textToHighlight9')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound9">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 10th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight10">You're too good at this game, Jack.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound10', 'textToHighlight10')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound10">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 11th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight11">Now it's your turn to count. I'll hide this time.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound11', 'textToHighlight11')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound11">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 12th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight12">Alright, I'll count to twenty. One, two, three...</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound12', 'textToHighlight12')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound12">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 13th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight13">(whispering) Where should I hide? Oh, I know!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound13', 'textToHighlight13')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound13">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 14th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight14">...eighteen, nineteen, twenty! Ready or not, here I come!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound14', 'textToHighlight14')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound14">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 15th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight15">(from behind the curtains) You'll never find me here!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound15', 'textToHighlight15')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound15">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 16th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight16">Found you! You were hiding behind the curtains.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound16', 'textToHighlight16')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound16">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 17th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight17">Aw, you're too good at this game too, Sarah.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound17', 'textToHighlight17')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound17">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 18th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight18">Let's play another game. How about tag?</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound18', 'textToHighlight18')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound18">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 19th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight19">Sounds fun! You're it!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound19', 'textToHighlight19')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound19">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 20th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight20">(chasing Jack) I'm going to catch you!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound20', 'textToHighlight20')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound20">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 21st turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight21">(laughing) You'll never catch me!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound21', 'textToHighlight21')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound21">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 22nd turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight22">Gotcha! You're tagged!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound22', 'textToHighlight22')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound22">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 23rd turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight23">Aw, you're too fast, Sarah!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound23', 'textToHighlight23')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound23">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 24th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight24">Tag, you're it!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound24', 'textToHighlight24')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound24">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 25th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight25">Okay, let's play again!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound25', 'textToHighlight25')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound25">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 26th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight26">Sure, let's go!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound26', 'textToHighlight26')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound26">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 27th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight27">But first, what time is it?</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound27', 'textToHighlight27')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound27">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 28th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight28">It is ten thirty.</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound28', 'textToHighlight28')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound28">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 29th turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight29">Great, we still have time for more games!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound29', 'textToHighlight29')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound29">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 30th turn -->
+                            <div class="talk">
+                                <div class="speaker-B">Sarah:</div>
+                                <div class="utterance" id="textToHighlight30">Yeah, let's play until it's time for lunch!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound30', 'textToHighlight30')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound30">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    
+                            <!-- 31st turn -->
+                            <div class="talk">
+                                <div class="speaker-A">Jack:</div>
+                                <div class="utterance" id="textToHighlight31">Sounds like a plan!</div>
+                                <div class="sentence_sound" onclick="playSoundAndStyle('sound31', 'textToHighlight31')">
+                                    <img src="./audio-icon3.png" alt="">
+                                </div>
+                                <audio id="sound31">
+                                    <source src="./Itishotandsunny.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- End of Dialogue-->
+    </div>
+
+
+    <div class="right-side">
+        <div class="topic">
+            <a href="../Wh-question/gametest1.html"><span>WH - Question</span></a>
+        </div>
+
+        <div class="topic">
+            <a href=""><span>Prepositions of Time</span></a>
+        </div>
+
+        <div class="topic">
+            <a href=""><span>Possessive Adjectives</span></a>
+        </div>
+
+        <div class="topic">
+            <a href=""><span>Yes / No Questions</span></a>
+        </div>
+
+        <div class="topic">
+            <a href=""><span>Useful Expressions</span></a>
+        </div>
+
+        <hr>
+
+        <div class="topic">
+            <a href=""><span>Daily Activities</span></a>
+        </div>
+
+        <div class="dictionary">
+            <a href=""><span>Weekly Activities</span></a>
+        </div>
+
+        <div class="topic">
+            <a href=""><span>Weather Dictionary</span></a>
+        </div>
+
+
+        <div class="topic">
+            <a href=""><span>Rooms and Things at Home</span></a>
+        </div>
+
+    </div>
+
+                
+
+</div>
+
+
+
+
+<audio id="correctSound">
+    <source src="./level-passed-143039.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="incorrectSound">
+    <source src="pleasetryagain.mp3" type="audio/mpeg">
+</audio>
+
+
+<footer>
+    <p>&copy; 2023 LESONCE. All rights reserved.</p>
+</footer>
+
+
+<script src="./script.js"></script>
+
+
+
+
+</body>
+</html>
